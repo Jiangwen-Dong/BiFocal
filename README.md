@@ -459,23 +459,6 @@ run records.
 
 ---
 
-## 🧭 Scope and Limits
-
-The archive implements the checked memory protocol and harness, local and global memory,
-task-plus-cost rewards, group-relative PPO for each role, rollout collection, and a
-three-round MLVU campaign that trains O and then the Reader in each round.
-
-Properties of the training pipeline that a run depends on:
-
-- A video group is two ordered questions of one video with four independent rollouts. Collection admits a group only if its four rollouts do not all receive the same reward. The campaign requires exactly 300 admitted groups per round (`--min-groups`).
-- The trainer has a second, stricter check. Its reward audit requires every group in the corpus to contain rollouts that differ in task outcome. `bifocal prepare-config` sets that floor to the group count (300) in `collection.min_task_variable_groups`, and `bifocal train` exits with code 3 if the corpus falls short. Run `bifocal train --dry-run` to see the result before any update.
-- Only task outcome and the role's capped call and frame cost enter the advantage. The evidence, grounding, memory-reuse, progress and protocol terms are computed and logged but zeroed in the optimization reward.
-- O's trained tokens are its typed action tokens. The reply of the separate reviewer call is not trained (`include_reviewer_tokens` is `false` in `configs/orchestrator.json`).
-- The campaign carries each trained adapter into the next phase. It does not evaluate, select, or roll back adapters. Evaluate each round's adapter with `bifocal evaluate` and `bifocal compare`. A trainer run that fails its own gates stops the campaign.
-- `bifocal prepare` builds training manifests only. It does not define the validation block or any test set.
-
----
-
 ## ✅ Tests
 
 ```bash
