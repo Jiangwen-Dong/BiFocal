@@ -1,0 +1,311 @@
+{
+  "file_count": 61,
+  "files": [
+    {
+      "bytes": 66,
+      "path": ".gitignore",
+      "sha256": "df5502d714459147dc1031f3a71285e780a2883b3645dc5446abcb9d4dd302f4"
+    },
+    {
+      "bytes": 1076,
+      "path": "LICENSE",
+      "sha256": "92039f3dc813908ab8e889675ec4c7582449eec2491664eea0f1254281d78ade"
+    },
+    {
+      "bytes": 23026,
+      "path": "README.md",
+      "sha256": "9102e6fb439e5f1160b4951026a29e490465928537d70a60e6525e2beb1f920e"
+    },
+    {
+      "bytes": 1905,
+      "path": "configs/orchestrator.json",
+      "sha256": "a13aa84978c313c0a64150b3dfedbec6098fa1fcb43fd8c83113759886385901"
+    },
+    {
+      "bytes": 1603,
+      "path": "configs/reader.json",
+      "sha256": "54058853d5474b1f91d6a2baf4b805af8dee946223ac919664f991c5a6c19192"
+    },
+    {
+      "bytes": 1337,
+      "path": "configs/role-lanes.json",
+      "sha256": "5f08ebcc5046746d46e9ec45633d55c61816e1717b727e42dcf9511cad798983"
+    },
+    {
+      "bytes": 4794513,
+      "path": "docs/assets/framework.svg",
+      "sha256": "0b51715aeeb5d3bda5562c6431dd3fedded4fd669233d2d7a8173a1b57136180"
+    },
+    {
+      "bytes": 732,
+      "path": "pyproject.toml",
+      "sha256": "5e522419844854e1fcdbeb6e7a3427cfdda3cef06a53240964c5401f61a56c48"
+    },
+    {
+      "bytes": 179,
+      "path": "src/bifocal/__init__.py",
+      "sha256": "aa55b55e9dda23221b530d39d85a703f002e3c7a0944105879f8e2d57e844240"
+    },
+    {
+      "bytes": 6424,
+      "path": "src/bifocal/cli.py",
+      "sha256": "68eb8fa4d4ad4b66c05da6c50ee251652249698c6b3c547fb52b681ce1e20710"
+    },
+    {
+      "bytes": 31,
+      "path": "src/bifocal/harness/__init__.py",
+      "sha256": "a03b5a266082e6c75f80245b6167de5176daa1189aa70978564dddcece05db55"
+    },
+    {
+      "bytes": 243334,
+      "path": "src/bifocal/harness/actions.py",
+      "sha256": "61daaf9dc9b20fb97b88e515655b72a78546ace71f495fd13093277cba3f76bd"
+    },
+    {
+      "bytes": 19367,
+      "path": "src/bifocal/harness/calls.py",
+      "sha256": "adb75a79de713ce0f2bd606ed2f6c4ec25617db40765b86fd78d053c2a656d03"
+    },
+    {
+      "bytes": 4277,
+      "path": "src/bifocal/harness/frames.py",
+      "sha256": "810d5067e43441fff6257a92fd554649cb4dc1f25dc224846df7327dbc386e50"
+    },
+    {
+      "bytes": 17559,
+      "path": "src/bifocal/harness/media.py",
+      "sha256": "83a25a630c7c491e15693834aa6fa10f24345e4d9e369c1c710a9d6196b2d014"
+    },
+    {
+      "bytes": 279523,
+      "path": "src/bifocal/harness/protocol.py",
+      "sha256": "b0fdf79478039d899ae85cf9bc5c8a6a48ad2c7e64e9f0b5f5fed07288629395"
+    },
+    {
+      "bytes": 2974,
+      "path": "src/bifocal/harness/time.py",
+      "sha256": "c36c880c3ab6421513a514f7710cfc6c1bafe0e058639c865ee6ecce1000173f"
+    },
+    {
+      "bytes": 30,
+      "path": "src/bifocal/memory/__init__.py",
+      "sha256": "ff100134b97f443e2b2eb19f3053d9ea4b228417d830ad9e54e01239cf3db5ae"
+    },
+    {
+      "bytes": 3140,
+      "path": "src/bifocal/memory/artifacts.py",
+      "sha256": "e65baf596b9d4318f771182aeeccfa93e02e57e0358248c7075d07f9eb487b14"
+    },
+    {
+      "bytes": 1207,
+      "path": "src/bifocal/memory/branches.py",
+      "sha256": "028891b0a241be37a52a68dd3c4e00c7fba8efff6989fc420d2c16d4dd053492"
+    },
+    {
+      "bytes": 42938,
+      "path": "src/bifocal/memory/cards.py",
+      "sha256": "1f6e1904f27e982a3a819857ae53849ae2b2efa51f4bb2db9f02effe0d2c674b"
+    },
+    {
+      "bytes": 5341,
+      "path": "src/bifocal/memory/claim.py",
+      "sha256": "c48c8845d1f603b7550b69df9c075349619e5bc6be4f7b35124e8d90663131c3"
+    },
+    {
+      "bytes": 17558,
+      "path": "src/bifocal/memory/global_store.py",
+      "sha256": "c6292dea02a7de07e02b199902fc90b801551d5cb2496ea477eed3838264d904"
+    },
+    {
+      "bytes": 28024,
+      "path": "src/bifocal/memory/local.py",
+      "sha256": "deccedae83996d3c01b435436ccdc1a7f607a3db4abe01e19d1da9ff8e8d9268"
+    },
+    {
+      "bytes": 9126,
+      "path": "src/bifocal/memory/replay.py",
+      "sha256": "b25fda68dcc6baebf7bd0605d66724b272e4d69c5d028ced4d8cc56c6cb24d62"
+    },
+    {
+      "bytes": 7588,
+      "path": "src/bifocal/memory/session.py",
+      "sha256": "b147e54ff2fa53d7c605bf2fe6a972d7122d793225668693b426a77c72d73564"
+    },
+    {
+      "bytes": 1163,
+      "path": "src/bifocal/paths.py",
+      "sha256": "454488da258d2067546c9694d6380de68ad5bbe333f5b275e07b4680f9e68892"
+    },
+    {
+      "bytes": 26,
+      "path": "src/bifocal/rl/__init__.py",
+      "sha256": "676620dcdfab250f9262a6bc2cc37f6f8a7a758c753cbb35888d4050dcd95b61"
+    },
+    {
+      "bytes": 2874,
+      "path": "src/bifocal/rl/action_signature.py",
+      "sha256": "5c35110868c0e44a43793fbc7a3a404f60b03afc6060cb3874e793b64f8c56f9"
+    },
+    {
+      "bytes": 26443,
+      "path": "src/bifocal/rl/campaign.py",
+      "sha256": "965275a918077eb92a8b81b3522d79351ffc65e605b5c9d34a2b480374ada024"
+    },
+    {
+      "bytes": 48197,
+      "path": "src/bifocal/rl/collect_manifest.py",
+      "sha256": "ac5d278473857969164f53bf23e742341d9fefd8258b28817454704a582d97ae"
+    },
+    {
+      "bytes": 48678,
+      "path": "src/bifocal/rl/collect_sequence.py",
+      "sha256": "670595ec9324f532415b2affada0b3faed433671bb1f5291904c00c4b2b6fd60"
+    },
+    {
+      "bytes": 8264,
+      "path": "src/bifocal/rl/credit.py",
+      "sha256": "0dc887a31aacc21b13ca14505da32a9c0e609f9210d32c08c2ed2a8f52315b80"
+    },
+    {
+      "bytes": 50298,
+      "path": "src/bifocal/rl/episode.py",
+      "sha256": "a9804f259e296c9bb3b669c586922389f9df2f30d32c1529393fb7e7d637be8d"
+    },
+    {
+      "bytes": 3931,
+      "path": "src/bifocal/rl/init_adapter.py",
+      "sha256": "cad672ef985a5b4c6e168012fa022ed796460b69baeef1d0d5d355e1eabdfc98"
+    },
+    {
+      "bytes": 24778,
+      "path": "src/bifocal/rl/question_ledger.py",
+      "sha256": "25755cff11966b8cc3126e423bc2022d6d76062a8f4eb61b8ce387638f45005f"
+    },
+    {
+      "bytes": 3654,
+      "path": "src/bifocal/rl/scripted_client.py",
+      "sha256": "57f71acb518a5a0a3de1c12a520c5d3fa54b45b81b139a36c04aadabbe70d4b0"
+    },
+    {
+      "bytes": 35076,
+      "path": "src/bifocal/rl/sequence.py",
+      "sha256": "cc3d5a639d46e39bb94156b78af100189e3638d783cc37d58aa094a9811ae204"
+    },
+    {
+      "bytes": 89893,
+      "path": "src/bifocal/rl/train_o.py",
+      "sha256": "2f63ded790df4945af123f488fad26d0de87e20b79b836c11cb813e6a00f7740"
+    },
+    {
+      "bytes": 40641,
+      "path": "src/bifocal/rl/train_reader.py",
+      "sha256": "feb65805540f121688e1d2667e1a6bc1bfe9eeed3694c4cc295feb11a3c5b033"
+    },
+    {
+      "bytes": 31,
+      "path": "src/bifocal/serving/__init__.py",
+      "sha256": "d41155d4104da3b5b7546bcc48ad608425f5669746b87b154ccec8e716377425"
+    },
+    {
+      "bytes": 33956,
+      "path": "src/bifocal/serving/client.py",
+      "sha256": "c391585f08604c30002510499434721cc7b534d57dac7f8425c9f50bfc117f37"
+    },
+    {
+      "bytes": 4273,
+      "path": "src/bifocal/serving/gpu.py",
+      "sha256": "7eee428e37fb2d393ace0a131b2035fe4b6be20db99d14f7d44106e682efd4b0"
+    },
+    {
+      "bytes": 12780,
+      "path": "src/bifocal/serving/lanes.py",
+      "sha256": "3defcef4779be57bb394fc313e23df011428cbe13928079d2ba30b0a29f7931a"
+    },
+    {
+      "bytes": 8935,
+      "path": "src/bifocal/serving/vllm.py",
+      "sha256": "8973d9e6f387d38855909ecff1f781aa2e8102882e161e875be438dc9b7cdb8d"
+    },
+    {
+      "bytes": 12283,
+      "path": "src/bifocal/serving/vllm_process.py",
+      "sha256": "b3b9e4e5eeb14e838dc168f2cd480ad5aa683b20ea39239d7304e55eca9ba6d1"
+    },
+    {
+      "bytes": 624,
+      "path": "src/bifocal/types.py",
+      "sha256": "6b1688ea205f6e8aa5f1b16cc57164d5a88f51ab469437820be18448edc16d71"
+    },
+    {
+      "bytes": 33,
+      "path": "src/bifocal/workflows/__init__.py",
+      "sha256": "6106472a4aaf380930e610538d2654a9175353f23e262aafcbdbb48c39fb5455"
+    },
+    {
+      "bytes": 6352,
+      "path": "src/bifocal/workflows/compare.py",
+      "sha256": "cca135a03bf87cf3247cbb4662a7a2c7cb7672bd4eb2b336f6a99b71d8b822fe"
+    },
+    {
+      "bytes": 6493,
+      "path": "src/bifocal/workflows/lvbench.py",
+      "sha256": "31b522a1ca8ad89d7f53f775afe71dcdeaba5a7fe22ebcee1415d3a5b37bc3a3"
+    },
+    {
+      "bytes": 12212,
+      "path": "src/bifocal/workflows/manifest.py",
+      "sha256": "636c44d9427782292a4259d7c0392415db19f3357d3e649b1a632847697f3a8c"
+    },
+    {
+      "bytes": 5762,
+      "path": "src/bifocal/workflows/mlvu.py",
+      "sha256": "ed1de0152e2d8e4bdc2c0840236039c609b0699ea99a5b8ffba23bfeabe849ef"
+    },
+    {
+      "bytes": 4660,
+      "path": "src/bifocal/workflows/prepare.py",
+      "sha256": "66dbb7a6195a983c82b7ff35296c59148a159505cf37d6f348b95032ec9e14da"
+    },
+    {
+      "bytes": 1225,
+      "path": "src/bifocal/workflows/validation.py",
+      "sha256": "0456540634c5e7a69e05d3f272f1e3772d6b779329ab9deda2cf53180e7adfb0"
+    },
+    {
+      "bytes": 7774,
+      "path": "tests/test_campaign.py",
+      "sha256": "fbc905849af22310c6e5fdd64814acead7d21f08020bfd12eeb72f8cbf4b083b"
+    },
+    {
+      "bytes": 3090,
+      "path": "tests/test_harness.py",
+      "sha256": "c4973ac7487c38b0277c0fef70de83191b5a67000a8906d1d337ff89d750ec1e"
+    },
+    {
+      "bytes": 3130,
+      "path": "tests/test_memory.py",
+      "sha256": "50fe787d6212c8a8d846c6c8e0904e2c5a2abc487772c35f93272dfca2671d3c"
+    },
+    {
+      "bytes": 14667,
+      "path": "tests/test_package.py",
+      "sha256": "e7c7044cedf9dbfac2d506b2d0ae2d8f649809e999a55cc18c0af5afe18b20a1"
+    },
+    {
+      "bytes": 4895,
+      "path": "tests/test_pipeline.py",
+      "sha256": "373d51974a3efee613b973525ffee8bb8f73c5a551f25d26e10e9aac3b637523"
+    },
+    {
+      "bytes": 5432,
+      "path": "tests/test_readme.py",
+      "sha256": "7011a0ed535112d854a0e9d93610c75923a0d17116840276e68f6ebf85bb2374"
+    },
+    {
+      "bytes": 7371,
+      "path": "tests/test_rl.py",
+      "sha256": "9cdf5592d9aa9e35ed1c6df306c8ae40376f14529b0b6fc52194cd80d045aa09"
+    }
+  ],
+  "schema_version": "bifocal-code-release-v1"
+}

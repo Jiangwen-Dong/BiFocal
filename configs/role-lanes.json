@@ -1,0 +1,49 @@
+{
+  "version": "role-lanes-v1",
+  "profiles": {
+    "single": {"lanes": ["shared"]},
+    "split": {"lanes": ["policy", "reader-a"]},
+    "split-readers": {"lanes": ["policy", "reader-a", "reader-b"]}
+  },
+  "lanes": {
+    "shared": {
+      "endpoint": "http://127.0.0.1:8000/v1",
+      "tensor_parallel_size": 2,
+      "max_concurrency": 2,
+      "perspective": "shared"
+    },
+    "policy": {
+      "endpoint": "http://127.0.0.1:8000/v1",
+      "tensor_parallel_size": 2,
+      "max_concurrency": 1,
+      "perspective": "orchestrator"
+    },
+    "reader-a": {
+      "endpoint": "http://127.0.0.1:8001/v1",
+      "tensor_parallel_size": 2,
+      "max_concurrency": 2,
+      "perspective": "reader"
+    },
+    "reader-b": {
+      "endpoint": "http://127.0.0.1:8002/v1",
+      "tensor_parallel_size": 2,
+      "max_concurrency": 2,
+      "perspective": "reader"
+    }
+  },
+  "roles": {
+    "policy_exact": [
+      "turn", "survey", "scan", "coarse-plan", "plan",
+      "decide", "decide-submit", "decide-retry", "select",
+      "conflict", "floor", "frames-control", "capacity-probe"
+    ],
+    "reader_prefixes": [
+      "selective", "replan", "all", "verify", "recall", "loopread", "zoom"
+    ],
+    "policy_patterns": [
+      "^review-(?:[0-9]+|M[0-9]+)$",
+      "^check-[0-9]+-r[0-9]+$",
+      "^check-card-[A-Za-z0-9]+$"
+    ]
+  }
+}
